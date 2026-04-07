@@ -19,6 +19,6 @@ git commit -am "adding secrets"
 
 will result in error (Secret is redacted)
 
-
+gitleaks detect
 
 
