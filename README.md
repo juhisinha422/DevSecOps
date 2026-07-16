@@ -21,6 +21,20 @@ _Note:_ Currently this is an early version of the library. I recommend PR after 
 ![stars](https://img.shields.io/github/stars/sottlmarek/DevSecOps?style=for-the-badge)
 ![watchers](https://img.shields.io/github/watchers/sottlmarek/DevSecOps?color=green&style=for-the-badge) ![watchers](https://img.shields.io/github/forks/sottlmarek/DevSecOps?color=orange&style=for-the-badge)
 
+<p align="center">
+  <strong>Sponsored by</strong>
+</p>
+<p align="center">
+  <a href="https://www.kvantumci.com/"><img src="assets/kvantumci.png" alt="KvantumCI" height="80"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://hackihub.com/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/hackihub-dark.png">
+      <img src="assets/hackihub-light.png" alt="HackiHub" height="80">
+    </picture>
+  </a>
+</p>
+
 This library contains list of tools and methodologies accompanied with resources. The main goal is to provide to the engineers a guide through opensource DevSecOps tooling. This repository covers only cyber security in the cloud and the DevSecOps scope. 
 
 # Table of Contents
@@ -47,6 +61,7 @@ This library contains list of tools and methodologies accompanied with resources
   - [Chaos engineering](#chaos-engineering)
   - [Infrastructure as code security](#infrastructure-as-code-security)
   - [Orchestration](#orchestration)
+  - [AI](#ai)
 - [Methodologies, whitepapers and architecture](#methodologies-whitepapers-and-architecture)
 - [Other](#other)
 - [License](#license)
@@ -244,7 +259,7 @@ Dynamic application security testing (DAST) is a type of application testing (in
 | **Trivy** | [https://github.com/aquasecurity/trivy](https://github.com/aquasecurity/trivy) | Comprehensive scanner for vulnerabilities in container images |![Trivy](https://img.shields.io/github/stars/aquasecurity/trivy?style=for-the-badge) | 
 | **Notary** | [https://github.com/notaryproject/notary](https://github.com/notaryproject/notary) | Docker signing|![Notary](https://img.shields.io/github/stars/notaryproject/notary?style=for-the-badge) | 
 | **Cosign** | [https://github.com/sigstore/cosign](https://github.com/sigstore/cosign) | Container signing|![Cosign](https://img.shields.io/github/stars/sigstore/cosign?style=for-the-badge) | 
-| **watchtower** | [https://github.com/containrrr/watchtower](https://github.com/containrrr/watchtower) | Updates the running version of your containerized app |![watchtower](https://img.shields.io/github/stars/containrrr/watchtower?style=for-the-badge) |
+| **watchtower** | [https://github.com/openserbia/watchtower](https://github.com/openserbia/watchtower) | Updates the running version of your containerized app (maintained fork; upstream containrrr archived) |![watchtower](https://img.shields.io/github/stars/openserbia/watchtower?style=for-the-badge) |
 | **Grype** | [https://github.com/anchore/grype](https://github.com/anchore/grype) | Vulnerability scanner for container images (and also filesystems). |![Grype](https://img.shields.io/github/stars/anchore/grype?style=for-the-badge) |
 | **Copacetic** | [https://github.com/project-copacetic/copacetic](https://github.com/project-copacetic/copacetic) | CLI tool for directly patching container images |![Copacetic](https://img.shields.io/github/stars/project-copacetic/copacetic?style=for-the-badge) | 
 
@@ -285,6 +300,7 @@ AWS specific DevSecOps tooling. Tools here cover different areas like inventory 
 | **Yor** | [Yor](https://github.com/bridgecrewio/yor) | Adds informative and consistent tags across infrastructure-as-code frameworks such as Terraform, CloudFormation, and Serverless | ![Yor](https://img.shields.io/github/stars/bridgecrewio/yor?style=for-the-badge)|
 | **AWS Insights** | [https://github.com/turbot/steampipe-mod-aws-insights](https://github.com/turbot/steampipe-mod-aws-insights) | Visualize AWS inventory and permissions through relationship graphs. | [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe-mod-aws-insights)](https://github.com/turbot/steampipe-mod-aws-insights/stargazers) |
 | **AWS Compliance** | [https://github.com/turbot/steampipe-mod-aws-compliance](https://github.com/turbot/steampipe-mod-aws-compliance) | Check compliance of AWS configurations to security best practices. | [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe-mod-aws-compliance)](https://github.com/turbot/steampipe-mod-aws-compliance/stargazers) |
+| **cloud-audit** | [https://github.com/gebalamariusz/cloud-audit](https://github.com/gebalamariusz/cloud-audit) | Open-source AWS security scanner with attack chain detection and auto-remediation |![cloud-audit](https://img.shields.io/github/stars/gebalamariusz/cloud-audit?style=for-the-badge) |
 
 
 ## Google cloud platform 
@@ -357,6 +373,7 @@ Scanning your infrastructure when it is only code helps shift-left the security.
 | **Terraform Compliance for Azure** | [https://github.com/turbot/steampipe-mod-terraform-azure-compliance](https://github.com/turbot/steampipe-mod-terraform-azure-compliance) | Check compliance of Terraform configurations to Azure security best practices. | [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe-mod-terraform-azure-compliance)](https://github.com/turbot/steampipe-mod-terraform-azure-compliance/stargazers) |
 | **Terraform Compliance for GCP** | [https://github.com/turbot/steampipe-mod-terraform-gcp-compliance](https://github.com/turbot/steampipe-mod-terraform-gcp-compliance) | Check compliance of Terraform configurations to GCP security best practices. | [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe-mod-terraform-gcp-compliance)](https://github.com/turbot/steampipe-mod-terraform-gcp-compliance/stargazers) |
 | **Terraform Compliance for OCI** | [https://github.com/turbot/steampipe-mod-terraform-oci-compliance](https://github.com/turbot/steampipe-mod-terraform-oci-compliance) | Check compliance of Terraform configurations to OCI security best practices. | [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe-mod-terraform-oci-compliance)](https://github.com/turbot/steampipe-mod-terraform-oci-compliance/stargazers) |
+| **Ansible Security Scanner** | [https://github.com/cpeoples/ansible-security-scanner](https://github.com/cpeoples/ansible-security-scanner) | Static security scanner for Ansible playbooks, roles, and collections; outputs SARIF, CycloneDX SBOM, and GitLab SAST. |![Ansible Security Scanner](https://img.shields.io/github/stars/cpeoples/ansible-security-scanner?style=for-the-badge) |
 
 ## Network Intrusion Prevention
 Network Intrusion Prevention (NIP) is a security mechanism used to detect and prevent unauthorized access, attacks, or malicious activities on a computer network. It is designed to monitor network traffic in real-time, identify potential threats, and take proactive measures to mitigate them.
@@ -375,6 +392,15 @@ Event driven security help to drive, automate and execute tasks for security pro
 | **Camunda** | [https://github.com/camunda/camunda-bpm-platform](https://github.com/camunda/camunda-bpm-platform) | Workflow and process automation |![Camunda](https://img.shields.io/github/stars/camunda/camunda-bpm-platform?style=for-the-badge)| 
 | **DefectDojo** | [https://github.com/DefectDojo/django-DefectDojo](https://github.com/DefectDojo/django-DefectDojo) | Security orchestration and vulnerability management platform |![DefectDojo](https://img.shields.io/github/stars/DefectDojo/django-DefectDojo?style=for-the-badge) | 
 | **Faraday** | [https://github.com/infobyte/faraday](https://github.com/infobyte/faraday) | Security suite for Security Orchestration, vulnerability management and centralized information |![Faraday](https://img.shields.io/github/stars/infobyte/faraday) |
+
+## AI
+
+Tools leveraging AI, LLMs, or agentic workflows for security research, analysis, and observability across DevSecOps pipelines.
+
+| Name | URL | Description | Meta | 
+| :---------- | :---------- | :---------- | :----------: |
+| **KubeStellar Console** | [https://github.com/kubestellar/console](https://github.com/kubestellar/console) | Open source AI-powered multi-cluster Kubernetes dashboard with Falco, OPA/Gatekeeper, and Kyverno compliance dashboards for security observability across hybrid edge and cloud. CNCF Sandbox project. |![KubeStellar Console](https://img.shields.io/github/stars/kubestellar/console?style=for-the-badge) |
+| **Cynative** | [https://github.com/cynative/cynative](https://github.com/cynative/cynative) | Agentic security CLI that runs code in a built-in sandbox to research cloud, code and runtime. Read-only enforced by default | ![cynative](https://img.shields.io/github/stars/cynative/cynative?style=for-the-badge) |
 
 # Methodologies, whitepapers and architecture
 
@@ -431,4 +457,4 @@ DevSecOps videos - [Hackitect playground](https://www.youtube.com/channel/UCy0S_
 # License
 MIT license
 
-Marek Šottl (c) 2022
+Marek Šottl (c) 2026
