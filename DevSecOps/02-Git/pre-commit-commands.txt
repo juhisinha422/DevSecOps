@@ -15,7 +15,7 @@ pre-commit autoupdate
 
 echo "AWS_SECRET_ACCESS_KEY=AKIA123456789" > secrets.env
 git add secrets.env
-git commit -am "adding secrets"
+git commit -m "adding secrets"
 
 will result in error (Secret is redacted)
 
